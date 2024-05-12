@@ -1,0 +1,156 @@
+﻿@model EcommerceShop.Models.Home.HomeIndexViewModel
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/Content/MyMainLayOut.css" rel="stylesheet" />
+<div id="themeSlider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#themeSlider" data-slide-to="1"></li>
+        <li data-target="#themeSlider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="imgOverlay"></div>
+            <img style="height:320px;width:100%" src="../Images/1.png" alt="First slide">
+            <div class="carousel-caption">
+                <h3>First slide</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="imgOverlay"></div>
+            <img style="height:320px;width:100%" src="../Images/2.jpg" alt="Second slide">
+            <div class="carousel-caption">
+                <h3>Second slide</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="imgOverlay"></div>
+            <img style="height:320px;width:100%" src="../Images/3.jpg.jpg" alt="Third slide">
+            <div class="carousel-caption">
+                <h3>Third slide</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+        <span class="fa fa-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#themeSlider" data-slide="next">
+        <span class="fa fa-chevron-right"></span>
+    </a>
+</div>
+<div class="olContent f1"><h2 style="color:black">Search Product/Category</h2></div>
+<form method="post">
+    <div class="olSearch fr">
+        <input type="text" name="search" placeholder="Enter Keyword" class="inputComn houseText form-control" />
+        <div class="searchIcon">
+            <button type="submit" name="search" class="searchBtn">
+                <img src="~/Images/pngegg.png" />
+            </button>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h2>Our Products <small>trends products</small></h2>
+        </div>
+    </div>
+</div>
+<div class="row product-container">
+    @foreach (var item in Model.ListOfProducts)
+    {
+        <div class="col-md-3 col-sm-3 col-xs-6" style="margin-bottom:8px">
+            <!-- Wrap the product content inside an anchor tag -->
+            <a href="@Url.Action("ViewProductDetails", "Home", new { productId = item.ProductId })">
+                <div class="thumbnail product-item" style="height:300px">
+                    <img class="img-res" title="Click to View Product detail"
+                         style="cursor:pointer;height:160px;width:140px"
+                         src="~/ProductImg/@item.ProductImage" />
+                    <div class="caption">
+                        <h5>@item.ProductName</h5>
+                        <p>PHP<text>@String.Format("{0:N0}", @item.Price)</text></p>
+
+                        @if (item.Quantity > 0)
+                        {
+                            using (Html.BeginForm("AddToCart", "Home", new { productId = item.ProductId }, FormMethod.Post))
+                            {
+                                <button type="submit" class="pull-right"><i class="fa fa-shopping-cart"></i></button>
+                            }
+                            <p>Available</p>
+                        }
+                        else
+                        {
+                            <p>Not Available</p>
+                        }
+                        <div class="product-item-badge">
+                            @if (item.IsFeatured == true)
+                            {
+                                <p>New</p>
+                            }
+                            else
+                            {
+                                <p>Old</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </a> <!-- End of anchor tag -->
+        </div>
+    }
+</div>
+<div class="">
+    @Html.PagedListPager(Model.ListOfProducts, page => Url.Action("Index", new { page, search = Request.QueryString["search"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayItemSliceAndTotal = true })
+</div>
+@*<div class="row product-container">
+        @foreach (var item in Model.ListOfProducts)
+        {
+            <div class="col-md-3 col-sm-3 col-xs-6" style="margin-bottom:8px">
+                <div class="thumbnail product-item" style="height:300px">
+                    <img class="img-res" title="Click to View Product detail"
+                         style="cursor:pointer;height:160px;width:140px"
+                         src="~/ProductImg/@item.ProductImage" />
+
+                    <div class="caption">
+                        <h5>@item.ProductName</h5>
+                        <p>PHP<text>@String.Format("{0:N0}", @item.Price)</text></p>
+
+                            @if (item.Quantity > 0)
+                            {
+                                using (Html.BeginForm("AddToCart", "Home", new { productId = item.ProductId }, FormMethod.Post))
+                                {
+                                    <button type="submit" class="pull-right"><i class="fa fa-shopping-cart"></i></button>
+                                }
+                            <p>Available</p>
+                            }
+                            else
+                            {
+                                <p>Not Available</p>
+                            }
+
+
+                            <div class="product-item-badge">
+
+                                @if (item.IsFeatured == true)
+                                {
+                                    <p>New</p>
+                                }
+                                else
+                                {
+                                    <p>Old</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        }
+    </div>*@
+@*<div class="">
+        @Html.PagedListPager(Model.ListOfProducts, page => Url.Action("Index", new { page, search = Request.QueryString["search"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayItemSliceAndTotal = true })
+    </div>*@

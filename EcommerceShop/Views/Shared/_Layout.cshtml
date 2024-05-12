@@ -1,0 +1,110 @@
+﻿@using EcommerceShop.Models.Home;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*@Styles.Render("~/Content/css")*@
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/MyMainLayOut.css?v=2" rel="stylesheet" />
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="logo">
+                    <h1><a href="#">ONLINE <span>SHOPPING STORESs</span></a></h1>
+                    <p>My Shop</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <ul class="nav navbar-nav navbar-right">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a>Welcome, @User.Identity.Name!</a></li>
+                        <li><a href="~/Home/Logout">Logout</a></li>
+                        <li><a href="@Url.Action("AccountInfo", "Home")">My Profile</a></li>
+                   
+                    }
+                    else
+                    {
+                        <li><a href="@Url.Action("Login", "Account")">Login</a></li>
+                        <li><a href="@Url.Action("SignUp", "Home")">Create</a></li>
+
+                    }
+                </ul>
+                   
+                        <ul class="nav navbar-nav navbar-right">
+                             @if (User.Identity.IsAuthenticated)
+                            {             
+                            <li class="dropdown">
+                                <a href="@Url.Action("ViewCart", "Home")">Cart<span class="badge">@ViewBag.CartItemCount</span><b></b></a>
+                                
+                            </li>
+                             }
+
+                        </ul>
+
+</div>
+        </div>
+        
+        
+
+        <div class="row">
+
+            <div class="col-m-12">
+                <div class="nav-menus">
+
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="#">More Info</a></li>
+                        <li ><a href="#">About</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("Manager"))
+                        {
+                        <li><a href="@Url.Action("Dashboard", "Admin")">Your Store</a></li>
+                        }
+
+                    }
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-12 copyright">
+                    <div class="col-md-6 col-sm-6 copyright-left">
+                        <p>&copy; @DateTime.Now.Year - OnlineShoppingStore. All right reserved.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 copyright-right">
+                        <ul class="list-unstyled list-social">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

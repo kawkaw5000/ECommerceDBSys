@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EcommerceShop.DAL.Tbl_Members>
+
+@{
+    ViewBag.Title = "Members";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Members";
+    // Disable caching
+    Response.Cache.SetCacheability(HttpCacheability.NoCache);
+    Response.Cache.SetNoStore();
+    Response.Cache.AppendCacheExtension("no-cache");
+    Response.Expires = -1;
+
+    var loggedInUserId = User.Identity.Name;
+    var loggedInUserMembers = Model.Where(m => m.Username == loggedInUserId).ToList(); // Convert to list to prevent multiple enumeration
+}
+
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Members Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Members Name</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @{
+                        var count = 1;
+                        foreach (var item in loggedInUserMembers)
+                        {
+                            <tr>
+                                <td>@count</td>
+                                <td>@item.Username</td>
+                                <td>
+                                    @Html.ActionLink("Edit", "AccountEdit", new { memberId = item.id })
+                                </td>
+                            </tr>
+                            count++;
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+Store accs:
+acc#1 : storetest1
+pass  : 123
+
+acc#2 : storetest2
+pass  : 123
+
+User accs:
+
+acc#1 : usertest1
+pass  : 123
+
+acc#2 : usertest2
+pass  : 123

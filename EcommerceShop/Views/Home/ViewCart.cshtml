@@ -1,0 +1,69 @@
+﻿@model List<EcommerceShop.DAL.Tbl_Cart>
+@{
+    ViewBag.Title = "ViewCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Shopping Cart</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Tbl_Product.ProductName</td>
+                    <td><img src="~/ProductImg/@item.Tbl_Product.ProductImage" alt="@item.Tbl_Product.ProductName" width="100" height="100"></td>
+                    <td>@item.Tbl_Product.Description</td>
+                    <td>@item.Quantity</td>
+                    <td>PHP @String.Format("{0:N2}", @item.Tbl_Product.Price * @item.Quantity)</td>
+                    <td>
+                        <!-- Button for increasing quantity -->
+                        <form action="@Url.Action("IncreaseProductQuant", "Home")" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                        </form>
+                    </td>
+                    <td>
+                        <!-- Button for decreasing quantity -->
+                        <form action="@Url.Action("DecreaseProductQuant", "Home")" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-minus"></i></button>
+                        </form>
+                    </td>
+                    <td>
+                        <!-- Button for removing from cart -->
+                        <form action="@Url.Action("RemoveProduct", "Home")" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-danger">Remove from Cart</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p><strong>Total amount: PHP @String.Format("{0:N2}", Model.Sum(item => item.Tbl_Product.Price * item.Quantity))</strong></p>
+
+    <div class="col-md-2">
+        <!-- Checkout button form submission -->
+        @using (Html.BeginForm("Checkout", "Home", FormMethod.Post))
+        {
+            <button type="submit" class="btn btn-success btn-lg btn-block">Checkout</button>
+        }
+    </div>
+}
+else
+{
+    <p>Your cart is empty.</p>
+}

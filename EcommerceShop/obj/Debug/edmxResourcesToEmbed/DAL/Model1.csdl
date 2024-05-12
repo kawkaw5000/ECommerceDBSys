@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbMyOnlineShoppingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dbMyOnlineShoppingEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetBySearch" ReturnType="Collection(dbMyOnlineShoppingModel.GetBySearch_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(dbMyOnlineShoppingModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(dbMyOnlineShoppingModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="sysdiagrams" EntityType="dbMyOnlineShoppingModel.sysdiagrams" />
+    <EntitySet Name="Tbl_CartStatus" EntityType="dbMyOnlineShoppingModel.Tbl_CartStatus" />
+    <EntitySet Name="Tbl_MemberInfo" EntityType="dbMyOnlineShoppingModel.Tbl_MemberInfo" />
+    <EntitySet Name="Tbl_Roles" EntityType="dbMyOnlineShoppingModel.Tbl_Roles" />
+    <EntitySet Name="Tbl_SlideImage" EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" />
+    <EntitySet Name="vw_UserRole" EntityType="dbMyOnlineShoppingModel.vw_UserRole" />
+    <AssociationSet Name="FK_Tbl_MemberInfo_Tbl_MemberInfo" Association="dbMyOnlineShoppingModel.FK_Tbl_MemberInfo_Tbl_MemberInfo">
+      <End Role="Tbl_MemberInfo" EntitySet="Tbl_MemberInfo" />
+      <End Role="Tbl_MemberInfo1" EntitySet="Tbl_MemberInfo" />
+    </AssociationSet>
+    <EntitySet Name="Tbl_Category" EntityType="dbMyOnlineShoppingModel.Tbl_Category" />
+    <EntitySet Name="Tbl_Brand" EntityType="dbMyOnlineShoppingModel.Tbl_Brand" />
+    <EntitySet Name="Tbl_Product" EntityType="dbMyOnlineShoppingModel.Tbl_Product" />
+    <AssociationSet Name="FK_BrandId" Association="dbMyOnlineShoppingModel.FK_BrandId">
+      <End Role="Tbl_Brand" EntitySet="Tbl_Brand" />
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tbl_Produ__Categ__145C0A3F" Association="dbMyOnlineShoppingModel.FK__Tbl_Produ__Categ__145C0A3F">
+      <End Role="Tbl_Category" EntitySet="Tbl_Category" />
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+    </AssociationSet>
+    <EntitySet Name="Tbl_ShippingDetails" EntityType="dbMyOnlineShoppingModel.Tbl_ShippingDetails" />
+    <EntitySet Name="Tbl_Members" EntityType="dbMyOnlineShoppingModel.Tbl_Members" />
+    <EntitySet Name="Tbl_Store" EntityType="dbMyOnlineShoppingModel.Tbl_Store" />
+    <AssociationSet Name="FK_Tbl_Brand_Tbl_Members" Association="dbMyOnlineShoppingModel.FK_Tbl_Brand_Tbl_Members">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_Brand" EntitySet="Tbl_Brand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CatMemberId" Association="dbMyOnlineShoppingModel.FK_CatMemberId">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_Category" EntitySet="Tbl_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tbl_Membe__Membe__7C4F7684" Association="dbMyOnlineShoppingModel.FK__Tbl_Membe__Membe__7C4F7684">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_MemberInfo" EntitySet="Tbl_MemberInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoreId" Association="dbMyOnlineShoppingModel.FK_StoreId">
+      <End Role="Tbl_Store" EntitySet="Tbl_Store" />
+      <End Role="Tbl_MemberInfo" EntitySet="Tbl_MemberInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tbl_Shipp__Membe__1CF15040" Association="dbMyOnlineShoppingModel.FK__Tbl_Shipp__Membe__1CF15040">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_ShippingDetails" EntitySet="Tbl_ShippingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MemberId" Association="dbMyOnlineShoppingModel.FK_MemberId">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Members_Tbl_Roles" Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles">
+      <End Role="Tbl_Roles" EntitySet="Tbl_Roles" />
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Members_Tbl_Store" Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store">
+      <End Role="Tbl_Store" EntitySet="Tbl_Store" />
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProdStoreId" Association="dbMyOnlineShoppingModel.FK_ProdStoreId">
+      <End Role="Tbl_Store" EntitySet="Tbl_Store" />
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+    </AssociationSet>
+    <EntitySet Name="Tbl_Transaction" EntityType="dbMyOnlineShoppingModel.Tbl_Transaction" />
+    <AssociationSet Name="FK_Tbl_Transaction_Tbl_Members" Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Transaction_Tbl_Product" Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Product">
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+      <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Transaction_Tbl_Store" Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Store">
+      <End Role="Tbl_Store" EntitySet="Tbl_Store" />
+      <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
+    </AssociationSet>
+    <EntitySet Name="Tbl_Cart" EntityType="dbMyOnlineShoppingModel.Tbl_Cart" />
+    <AssociationSet Name="FK__Tbl_Cart__Produc__25869641" Association="dbMyOnlineShoppingModel.FK__Tbl_Cart__Produc__25869641">
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+      <End Role="Tbl_Cart" EntitySet="Tbl_Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Cart_Tbl_Store" Association="dbMyOnlineShoppingModel.FK_Tbl_Cart_Tbl_Store">
+      <End Role="Tbl_Store" EntitySet="Tbl_Store" />
+      <End Role="Tbl_Cart" EntitySet="Tbl_Cart" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="GetBySearch_Result">
+    <Property Type="Int32" Name="ProductId" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="CategoryId" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ProductImage" Nullable="true" />
+    <Property Type="Boolean" Name="IsFeatured" Nullable="true" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="CategoryId1" Nullable="true" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="IsActive1" Nullable="true" />
+    <Property Type="Boolean" Name="IsDelete1" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tbl_CartStatus">
+    <Key>
+      <PropertyRef Name="CartStatusId" />
+    </Key>
+    <Property Name="CartStatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CartStatus" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_MemberInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="FirstName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Street" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="UserImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StoreId" Type="Int32" />
+    <NavigationProperty Name="Tbl_MemberInfo1" Relationship="dbMyOnlineShoppingModel.FK_Tbl_MemberInfo_Tbl_MemberInfo" FromRole="Tbl_MemberInfo" ToRole="Tbl_MemberInfo1" />
+    <NavigationProperty Name="Tbl_MemberInfo2" Relationship="dbMyOnlineShoppingModel.FK_Tbl_MemberInfo_Tbl_MemberInfo" FromRole="Tbl_MemberInfo1" ToRole="Tbl_MemberInfo" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Membe__Membe__7C4F7684" FromRole="Tbl_MemberInfo" ToRole="Tbl_Members" />
+    <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_StoreId" FromRole="Tbl_MemberInfo" ToRole="Tbl_Store" />
+  </EntityType>
+  <EntityType Name="Tbl_Roles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" FromRole="Tbl_Roles" ToRole="Tbl_Members" />
+  </EntityType>
+  <EntityType Name="Tbl_SlideImage">
+    <Key>
+      <PropertyRef Name="SlideId" />
+    </Key>
+    <Property Name="SlideId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SlideTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SlideImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_UserRole">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Tbl_MemberInfo_Tbl_MemberInfo">
+    <End Type="dbMyOnlineShoppingModel.Tbl_MemberInfo" Role="Tbl_MemberInfo" Multiplicity="1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_MemberInfo" Role="Tbl_MemberInfo1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_MemberInfo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_MemberInfo1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tbl_Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="MemberId" Type="Int32" />
+    <NavigationProperty Name="Tbl_Product" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Produ__Categ__145C0A3F" FromRole="Tbl_Category" ToRole="Tbl_Product" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_CatMemberId" FromRole="Tbl_Category" ToRole="Tbl_Members" />
+  </EntityType>
+  <EntityType Name="Tbl_Brand">
+    <Key>
+      <PropertyRef Name="BrandId" />
+    </Key>
+    <Property Name="BrandId" Type="Int32" Nullable="false" />
+    <Property Name="BrandName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="MemberId" Type="Int32" />
+    <NavigationProperty Name="Tbl_Product" Relationship="dbMyOnlineShoppingModel.FK_BrandId" FromRole="Tbl_Brand" ToRole="Tbl_Product" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Brand_Tbl_Members" FromRole="Tbl_Brand" ToRole="Tbl_Members" />
+  </EntityType>
+  <EntityType Name="Tbl_Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ProductImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsFeatured" Type="Boolean" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="StoreId" Type="Int32" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="BrandId" Type="Int32" />
+    <NavigationProperty Name="Tbl_Brand" Relationship="dbMyOnlineShoppingModel.FK_BrandId" FromRole="Tbl_Product" ToRole="Tbl_Brand" />
+    <NavigationProperty Name="Tbl_Category" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Produ__Categ__145C0A3F" FromRole="Tbl_Product" ToRole="Tbl_Category" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_MemberId" FromRole="Tbl_Product" ToRole="Tbl_Members" />
+    <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_ProdStoreId" FromRole="Tbl_Product" ToRole="Tbl_Store" />
+    <NavigationProperty Name="Tbl_Transaction" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Product" FromRole="Tbl_Product" ToRole="Tbl_Transaction" />
+    <NavigationProperty Name="Tbl_Cart" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Cart__Produc__25869641" FromRole="Tbl_Product" ToRole="Tbl_Cart" />
+  </EntityType>
+  <Association Name="FK_BrandId">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Brand" Role="Tbl_Brand" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Product" Role="Tbl_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Brand">
+        <PropertyRef Name="BrandId" />
+      </Principal>
+      <Dependent Role="Tbl_Product">
+        <PropertyRef Name="BrandId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tbl_Produ__Categ__145C0A3F">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Category" Role="Tbl_Category" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Product" Role="Tbl_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Tbl_Product">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tbl_ShippingDetails">
+    <Key>
+      <PropertyRef Name="ShippingDetailId" />
+    </Key>
+    <Property Name="ShippingDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="AmountPaid" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Shipp__Membe__1CF15040" FromRole="Tbl_ShippingDetails" ToRole="Tbl_Members" />
+  </EntityType>
+  <EntityType Name="Tbl_Members">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ConfirmPass" Type="Int32" />
+    <Property Name="EmailId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="roleId" Type="Int32" />
+    <Property Name="StoreId" Type="Int32" />
+    <NavigationProperty Name="Tbl_Brand" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Brand_Tbl_Members" FromRole="Tbl_Members" ToRole="Tbl_Brand" />
+    <NavigationProperty Name="Tbl_Category" Relationship="dbMyOnlineShoppingModel.FK_CatMemberId" FromRole="Tbl_Members" ToRole="Tbl_Category" />
+    <NavigationProperty Name="Tbl_MemberInfo" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Membe__Membe__7C4F7684" FromRole="Tbl_Members" ToRole="Tbl_MemberInfo" />
+    <NavigationProperty Name="Tbl_ShippingDetails" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Shipp__Membe__1CF15040" FromRole="Tbl_Members" ToRole="Tbl_ShippingDetails" />
+    <NavigationProperty Name="Tbl_Product" Relationship="dbMyOnlineShoppingModel.FK_MemberId" FromRole="Tbl_Members" ToRole="Tbl_Product" />
+    <NavigationProperty Name="Tbl_Roles" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" FromRole="Tbl_Members" ToRole="Tbl_Roles" />
+    <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" FromRole="Tbl_Members" ToRole="Tbl_Store" />
+    <NavigationProperty Name="Tbl_Transaction" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" FromRole="Tbl_Members" ToRole="Tbl_Transaction" />
+  </EntityType>
+  <EntityType Name="Tbl_Store">
+    <Key>
+      <PropertyRef Name="StoreId" />
+    </Key>
+    <Property Name="StoreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="street" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="states" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="zip_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <NavigationProperty Name="Tbl_MemberInfo" Relationship="dbMyOnlineShoppingModel.FK_StoreId" FromRole="Tbl_Store" ToRole="Tbl_MemberInfo" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" FromRole="Tbl_Store" ToRole="Tbl_Members" />
+    <NavigationProperty Name="Tbl_Product" Relationship="dbMyOnlineShoppingModel.FK_ProdStoreId" FromRole="Tbl_Store" ToRole="Tbl_Product" />
+    <NavigationProperty Name="Tbl_Transaction" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Store" FromRole="Tbl_Store" ToRole="Tbl_Transaction" />
+    <NavigationProperty Name="Tbl_Cart" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Cart_Tbl_Store" FromRole="Tbl_Store" ToRole="Tbl_Cart" />
+  </EntityType>
+  <Association Name="FK_Tbl_Brand_Tbl_Members">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Brand" Role="Tbl_Brand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_Brand">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CatMemberId">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Category" Role="Tbl_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_Category">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tbl_Membe__Membe__7C4F7684">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_MemberInfo" Role="Tbl_MemberInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_MemberInfo">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoreId">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Store" Role="Tbl_Store" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_MemberInfo" Role="Tbl_MemberInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Tbl_MemberInfo">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tbl_Shipp__Membe__1CF15040">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_ShippingDetails" Role="Tbl_ShippingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_ShippingDetails">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MemberId">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Product" Role="Tbl_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_Product">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Members_Tbl_Roles">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Roles" Role="Tbl_Roles" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_Members">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Members_Tbl_Store">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Store" Role="Tbl_Store" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Tbl_Members">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProdStoreId">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Store" Role="Tbl_Store" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Product" Role="Tbl_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Tbl_Product">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tbl_Transaction">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="TransactionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="StoreId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TimeStamp" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" FromRole="Tbl_Transaction" ToRole="Tbl_Members" />
+    <NavigationProperty Name="Tbl_Product" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Product" FromRole="Tbl_Transaction" ToRole="Tbl_Product" />
+    <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Store" FromRole="Tbl_Transaction" ToRole="Tbl_Store" />
+  </EntityType>
+  <Association Name="FK_Tbl_Transaction_Tbl_Members">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Transaction" Role="Tbl_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_Transaction">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Transaction_Tbl_Product">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Product" Role="Tbl_Product" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Transaction" Role="Tbl_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Tbl_Transaction">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Transaction_Tbl_Store">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Store" Role="Tbl_Store" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Transaction" Role="Tbl_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Tbl_Transaction">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tbl_Cart">
+    <Key>
+      <PropertyRef Name="CartId" />
+    </Key>
+    <Property Name="CartId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="CartStatusId" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="StoreId" Type="Int32" />
+    <NavigationProperty Name="Tbl_Product" Relationship="dbMyOnlineShoppingModel.FK__Tbl_Cart__Produc__25869641" FromRole="Tbl_Cart" ToRole="Tbl_Product" />
+    <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Cart_Tbl_Store" FromRole="Tbl_Cart" ToRole="Tbl_Store" />
+  </EntityType>
+  <Association Name="FK__Tbl_Cart__Produc__25869641">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Product" Role="Tbl_Product" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Cart" Role="Tbl_Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Tbl_Cart">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Cart_Tbl_Store">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Store" Role="Tbl_Store" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_Cart" Role="Tbl_Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Tbl_Cart">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

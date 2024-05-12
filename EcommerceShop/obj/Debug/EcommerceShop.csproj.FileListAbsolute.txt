@@ -1,0 +1,860 @@
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\ApplicationInsights.config
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\csc.exe
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\vbc.exe
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EcommerceShop.dll.config
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EcommerceShop.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EcommerceShop.pdb
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Antlr3.Runtime.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EntityFramework.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EntityFramework.SqlServer.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.Web.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Newtonsoft.Json.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Owin.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Helpers.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Mvc.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Optimization.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Razor.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.WebPages.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\WebGrease.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.Web.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Helpers.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Mvc.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Optimization.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.Razor.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.WebPages.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Antlr3.Runtime.pdb
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Newtonsoft.Json.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EntityFramework.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\EntityFramework.SqlServer.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\obj\Debug\EcommerceShop.dll
+c:\users\lex\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\documents\visual studio 2015\Projects\EcommerceShop\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ - Copy (3)\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NEWUpdatedOriginal\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\DBSYS_PROJ-main\EcommerceShop\bin\ApplicationInsights.config
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\csc.exe
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\vbc.exe
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EcommerceShop.dll.config
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EcommerceShop.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EcommerceShop.pdb
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Owin.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.Mvc.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Helpers.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Mvc.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Optimization.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Razor.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\WebGrease.dll
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.Mvc.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Helpers.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Mvc.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Optimization.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Razor.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\DBSYS_PROJ-main\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\DBSYS_PROJ-main\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\DBSYS_PROJ-main\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYS_PROJ-main - Copy (3)\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\DBSYSMain - Copy (2)\EcommerceShop\obj\Debug\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\ApplicationInsights.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\csc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\vbc.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EcommerceShop.dll.config
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EcommerceShop.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Antlr3.Runtime.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EntityFramework.SqlServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.Web.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Newtonsoft.Json.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Owin.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\PagedList.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\PagedList.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Helpers.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Mvc.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Optimization.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.WebPages.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\WebGrease.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.Web.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\PagedList.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\PagedList.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Helpers.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Mvc.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Optimization.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.WebPages.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Antlr3.Runtime.pdb
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Newtonsoft.Json.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\EntityFramework.SqlServer.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\obj\Debug\EcommerceShop.csprojResolveAssemblyReference.cache
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\obj\Debug\EcommerceShop.dll
+C:\Users\LEX\Documents\Visual Studio 2015\Projects\DBProj\NewUpdatedOrig\EcommerceShop\obj\Debug\EcommerceShop.pdb

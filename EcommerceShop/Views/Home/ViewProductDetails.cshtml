@@ -1,0 +1,104 @@
+﻿@model EcommerceShop.Models.Home.ProductDetailsViewModel
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="~/Content/ProductDetails.css" rel="stylesheet" />
+<h2>Product Details</h2>
+
+@*<div>
+    <h4>@Model.Product.ProductName</h4>
+    <p>@Model.Product.Description</p>
+    <p>Price: PHP @String.Format("{0:N2}", Model.Product.Price)</p>
+    <p>Quantity Available: @Model.Product.Quantity</p>
+   
+    <img src="~/ProductImg/@Model.Product.ProductImage" alt="@Model.Product.ProductName" style="max-width: 300px; max-height: 300px;" />
+    @if (Model.Brand != null)
+    {
+        <div>
+            <h3>Brand Name</h3>
+            <p><strong>Name:</strong> @Model.Brand.BrandName</p>
+            
+        </div>
+    }
+   
+    <div>
+        @if (Model.Product.Quantity > 0)
+        {
+            <p><strong>Status:</strong> Available</p>
+           
+            using (Html.BeginForm("AddToCart", "Home", FormMethod.Post))
+            {
+                @Html.Hidden("productId", Model.Product.ProductId)
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            }
+        }
+        else
+        {
+            <p><strong>Status:</strong> Out of Stock</p>
+        }
+    </div>
+
+    
+    @if (Model.Seller != null)
+    {
+        <div>
+            <h3>Seller Information</h3>
+            <p><strong>Name:</strong> @Model.Seller.Username</p>
+         
+        </div>
+    }
+    
+</div>*@
+
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" id="pic-1"><img src="~/ProductImg/@Model.Product.ProductImage" alt="@Model.Product.ProductName" /></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="~/ProductImg/@Model.Product.ProductImage" alt="@Model.Product.ProductName" /></a></li>
+                    </ul>
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">@Model.Product.ProductName</h3>
+                    <h4 class="product-description">Description: @Model.Product.Description</h4>
+                    <h4 class="price">Price: PHP @String.Format("{0:N2}", Model.Product.Price)</h4>
+                    <h4 class="price">Quantity Available: @Model.Product.Quantity</h4>
+                    @if (Model.Brand != null)
+                    {
+                        <h4 class="price">Brand Name: @Model.Brand.BrandName</h4>
+                    }
+                    @if (Model.Seller != null)
+                    {
+                        <h4 class="price">Store Name: @Model.Seller.storeName</h4>
+                    }
+
+                    <div>
+                        @if (Model.Product.Quantity > 0)
+                        {
+                            <p><strong>Status:</strong> Available</p>
+
+                            using (Html.BeginForm("AddToCart", "Home", FormMethod.Post))
+                            {
+                                @Html.Hidden("productId", Model.Product.ProductId)
+                                <button type="submit" class="btn btn-primary">Add to Cart</button>
+                            }
+                        }
+                        else
+                        {
+                            <p><strong>Status:</strong> Out of Stock</p>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

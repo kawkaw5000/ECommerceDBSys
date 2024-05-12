@@ -1,0 +1,3 @@
+
+ALTER TABLE Tbl_Category
+ADD CONSTRAINT FK_CatMemberId FOREIGN KEY (MemberId) REFERENCES Tbl_Members(id);
