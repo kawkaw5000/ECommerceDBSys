@@ -15,7 +15,7 @@ namespace EcommerceShop.Contracts
     {
         T Get(object id);
         List<T> GetAll();
-        ErrorCode Create(T t, out String errorMsg);
+        ErrorCode Create(T t);
         ErrorCode Update(object id, T t);
         ErrorCode Delete(object id);
     }

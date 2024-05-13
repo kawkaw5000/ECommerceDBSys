@@ -40,20 +40,24 @@ namespace EcommerceShop.Controllers
 
         private IEnumerable<SelectListItem> GetRolesAsSelectList()
         {
+            List<SelectListItem> roleList = new List<SelectListItem>();
+
+            // Retrieve roles from the database using Entity Framework
             using (var dbContext = new dbMyOnlineShoppingEntities()) // Replace YourDbContext with your actual DbContext class
             {
-                var roles = dbContext.Tbl_Roles.ToList(); // Assuming Roles is a DbSet in your DbContext representing roles
+                var roles = dbContext.Tbl_Roles.ToList(); // Assuming Tbl_Roles is a DbSet in your DbContext representing roles
 
                 // Convert roles to SelectListItem objects
-                var selectList = roles.Select(role => new SelectListItem
+                roleList = roles.Select(role => new SelectListItem
                 {
                     Text = role.RoleName, // Assuming RoleName is the property representing the role name
-                    Value = role.id.ToString() // Assuming RoleId is the property representing the role ID
-                });
-
-                return selectList.ToList(); // Convert to list to ensure it's evaluated before the DbContext is disposed
+                    Value = role.id.ToString() // Assuming id is the property representing the role ID
+                }).ToList();
             }
+
+            return roleList;
         }
+
 
 
 
@@ -381,116 +385,100 @@ namespace EcommerceShop.Controllers
             return list;
         }
 
+
         public ActionResult SignUp()
-        {
-            Tbl_Members model = new Tbl_Members();
-            model.RoleList = GetRolesAsSelectList(); // Assuming you have a method to fetch roles as select list
-            return View(model);
-        }
-
-
-
-
-        //[AllowAnonymous]
-        //[HttpPost]
-        //public ActionResult SignUp(Tbl_Members ua, String ConfirmPass, int roleId, string otp)
-        //{
-        //    var storedOTP = Session["GeneratedOTP"]?.ToString();
-
-        //    if (ua.IsOTPGenerated)
-        //    {
-        //        ModelState.AddModelError("", "OTP has already been generated for this user.");
-        //        return View(ua);
-        //    }
-
-        //    if (string.IsNullOrEmpty(storedOTP))
-        //    {
-        //        ModelState.AddModelError("", "OTP expired or not found. Please try signing up again.");
-        //        return View(ua);
-        //    }
-
-        //    if (otp != storedOTP)
-        //    {
-        //        ModelState.AddModelError("", "Incorrect OTP. Please try again.");
-        //        return View(ua);
-        //    }
-
-        //    if (!ua.Password.Equals(ConfirmPass))
-        //    {
-        //        ModelState.AddModelError(String.Empty, "Password not match");
-        //        ViewBag.Roles = new SelectList(ctx.Tbl_Roles, "id", "RoleName");
-        //        return View(ua);
-        //    }     
-
-        //    ua.roleId = roleId;
-
-        //    if (_userManager.SignUp(ua, ref ErrorMessage) != Contracts.ErrorCode.Success)
-        //    {
-        //        ModelState.AddModelError(String.Empty, ErrorMessage);
-        //        ViewBag.Roles = new SelectList(ctx.Tbl_Roles, "id", "RoleName");
-        //        return View(ua);
-        //    }
-
-        //    int memberId = ua.id;
-        //    Session.Remove("GeneratedOTP");
-        //    TempData["username"] = ua.Username;
-        //    return RedirectToAction("AddUserInfo", new { memberId = memberId }); ;
-        //}
-
-        [AllowAnonymous]
-        [HttpPost]
-        public ActionResult SignUp(Tbl_Members ua, string ConfirmPass, int roleId, string otp)
-        {
-            var storedOTP = Session["GeneratedOTP"]?.ToString();
-
-            // Check if storedOTP is null or empty
-            if (string.IsNullOrEmpty(storedOTP))
-            {
-                ModelState.AddModelError("", "OTP expired or not found. Please try signing up again.");
-                return View(ua);
-            }
-
-            // Check if the entered OTP matches the stored OTP
-            if (otp != storedOTP)
-            {
-                ModelState.AddModelError("", "Incorrect OTP. Please try again.");
-                return View(ua);
-            }
-
-            // Check if passwords match
-            if (!ua.Password.Equals(ConfirmPass))
-            {
-                ModelState.AddModelError(String.Empty, "Password does not match");
-                // Repopulate the RoleList in case of validation error
-                ua.RoleList = GetRolesAsSelectList();
-                return View(ua);
-            }
-
-            // Populate RoleList with a list of select list items
-            ua.RoleList = GetRolesAsSelectList(); // Assuming GetRolesAsSelectList() method returns a list of SelectListItem
-
-            // Populate roleId with the selected role ID
-            ua.roleId = roleId;
-
-            // Perform further actions (e.g., signing up the user)
-
-            return RedirectToAction("Verify");
-        }
-
-
-        public ActionResult Verify()
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult SignUp(Tbl_Members u, string SelectedRole, string otp)
+        {
+            var storedOTP = Session["GeneratedOTP"]?.ToString();
+            u.IsActive = true;
+            u.IsDelete = false;
+            u.CreatedOn = DateTime.Now;
+
+            if (string.IsNullOrEmpty(storedOTP))
+            {
+                ModelState.AddModelError("", "OTP expired or not found. Please try signing up again.");
+                return View(u);
+            }
+
+            if (otp != storedOTP)
+            {
+                ModelState.AddModelError("", "Incorrect OTP. Please try again.");
+                return View(u);
+            }
+
+            // OTP is correct, proceed with user creation
+            var existingUser = _userRepo.Table.FirstOrDefault(m => m.Username == u.Username);
+
+            if (existingUser != null)
+            {
+                TempData["ErrorMsg"] = "Username already exists. Please choose a different username.";
+                return RedirectToAction("SignUp");
+            }
+
+            // Proceed with user creation if the username is unique
+            if (string.IsNullOrEmpty(SelectedRole))
+            {
+                ModelState.AddModelError("", "Role not selected.");
+                return View(u);
+            }
+
+            var role = _db.Tbl_Roles.FirstOrDefault(r => r.RoleName == SelectedRole);
+
+            if (role == null)
+            {
+                ModelState.AddModelError("", "Invalid role selected.");
+                return View(u);
+            }
+
+            u.roleId = role.id; // Assign the roleId to the user
+
+            _userRepo.Create(u);
+
+            var userAdded = _userRepo.Table.FirstOrDefault(m => m.Username == u.Username);
+
+            if (userAdded == null)
+            {
+                ModelState.AddModelError("", "Failed to create user.");
+                return View(u);
+            }
+
+            var userRole = new Tbl_UserRole
+            {
+                MemberId = userAdded.id,
+                RoleId = role.id
+            };
+
+            _userRole.Create(userRole);
+
+            Session.Remove("GeneratedOTP");
+
+            TempData["SuccessMsg"] = $"User {u.Username} added!";
+            return RedirectToAction("SuccessRegister"); // Redirect to SuccessRegister action
+        }
+
+        public ActionResult SuccessRegister()
+        {
+            // Check if SuccessMsg exists in TempData
+            if (TempData["SuccessMsg"] == null)
+            {
+                // If SuccessMsg doesn't exist, redirect to an error page or another appropriate action
+                return RedirectToAction("Error");
+            }
+            else
+            {
+                // If SuccessMsg exists, render the SuccessRegister view
+                return View();
+            }
+        }
+
 
         [HttpPost]
         public ActionResult GenerateOTP(string email)
         {
-            // Check if there's already an OTP stored in session
-            if (Session["GeneratedOTP"] != null)
-            {
-                return Json(new { success = false, message = "You already have an active OTP. Please use it to sign up." });
-            }
 
             string generatedOTP = "";
             using (var rng = new RNGCryptoServiceProvider())
@@ -500,10 +488,13 @@ namespace EcommerceShop.Controllers
                 generatedOTP = string.Join("", tokenData.Select(b => (b % 10).ToString()));
             }
 
+
             Session["GeneratedOTP"] = generatedOTP;
+
 
             string errResponse = "";
             bool emailSent = _mailManager.SendEmail(email, "Your OTP", $"Your sign up OTP is: {generatedOTP}", generatedOTP, ref errResponse);
+
 
             if (emailSent)
             {
@@ -516,10 +507,64 @@ namespace EcommerceShop.Controllers
         }
 
 
+        //[AllowAnonymous]
         //[HttpPost]
-        //public ActionResult GenerateOTP(string email, Tbl_Members ua)
+        //public ActionResult SignUp(Tbl_Members ua, String ConfirmPass, int roleId, string otp)
         //{
-        //    // Check if there's already an OTP stored in session
+        //    var storedOTP = Session["GeneratedOTP"]?.ToString();
+
+        //    if (string.IsNullOrEmpty(storedOTP) || otp != storedOTP)
+        //    {
+        //        ModelState.AddModelError("", "Incorrect OTP. Please try again."); // Add model error
+        //        ViewBag.Roles = new SelectList(ctx.Tbl_Roles, "id", "RoleName");
+        //        return View(ua); // Return the view with the error message
+        //    }
+
+        //    if (string.IsNullOrEmpty(storedOTP) || otp != storedOTP)
+        //    {
+        //        TempData["error"] = "Incorrect OTP"; // Set error message in TempData
+        //        return View(ua); // Return the view with the error message
+        //    }
+
+        //    ua.roleId = roleId;
+
+        //    if (_userManager.SignUp(ua, ref ErrorMessage) != Contracts.ErrorCode.Success)
+        //    {
+        //        ModelState.AddModelError(String.Empty, ErrorMessage);
+        //        ViewBag.Roles = new SelectList(ctx.Tbl_Roles, "id", "RoleName");
+        //        return View(ua);
+        //    }       
+
+        //    if (ua.IsOTPGenerated)
+        //    {
+        //        TempData["error"] = "Incorrect Code";
+        //        return View(ua);
+        //    }
+
+        //    if (string.IsNullOrEmpty(storedOTP))
+        //    {
+        //       TempData["error"] = "Incorrect Code";
+        //        return View(ua);
+        //    }
+
+        //    if (otp != storedOTP)
+        //    {
+        //        TempData["error"] = "Incorrect Code";
+        //        return View(ua);
+        //    }
+
+        //    int memberId = ua.id;
+        //    Session.Remove("GeneratedOTP");
+        //    TempData["username"] = ua.Username;
+        //    return RedirectToAction("Login", "Account");
+        //}
+
+
+
+        //[HttpPost]
+        //public ActionResult GenerateOTP(string email)
+        //{
+        //    Check if there's already an OTP stored in session
         //    if (Session["GeneratedOTP"] != null)
         //    {
         //        return Json(new { success = false, message = "You already have an active OTP. Please use it to sign up." });
@@ -547,7 +592,6 @@ namespace EcommerceShop.Controllers
         //        return Json(new { success = false, message = $"Failed to send OTP: {errResponse}" });
         //    }
         //}
-
 
         public ActionResult MemberInfo()
         {

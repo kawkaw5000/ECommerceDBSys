@@ -4,13 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="de7db5b8f9ba4fa5b225236d7d485496" Name="Diagram1" ZoomLevel="65">
+      <Diagram DiagramId="de7db5b8f9ba4fa5b225236d7d485496" Name="Diagram1" ZoomLevel="63">
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="0.75" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_CartStatus" Width="1.5" PointX="10.75" PointY="0.75" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_MemberInfo" Width="1.5" PointX="5.25" PointY="5.875" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Roles" Width="1.5" PointX="0.75" PointY="7" />
-        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" Width="1.5" PointX="0.75" PointY="10.75" />
-        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.vw_UserRole" Width="1.5" PointX="2.75" PointY="10.75" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_MemberInfo_Tbl_MemberInfo" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Category" Width="1.5" PointX="5.25" PointY="10.625" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Brand" Width="1.5" PointX="6" PointY="1.5" />
@@ -36,6 +34,11 @@
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" />
+        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_UserRole" Width="1.5" PointX="10.25" PointY="8.875" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles" />
+        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.vw_UserRole" Width="1.5" PointX="7.375" PointY="10.75" />
+        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" Width="1.5" PointX="1.25" PointY="10.875" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

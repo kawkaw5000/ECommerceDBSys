@@ -14,6 +14,12 @@ namespace EcommerceShop
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "PageNotFound",
+                url: "Error/PageNotFound",
+                defaults: new { controller = "Error", action = "PageNotFound" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

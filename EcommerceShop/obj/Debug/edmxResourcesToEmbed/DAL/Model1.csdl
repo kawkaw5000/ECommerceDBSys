@@ -38,8 +38,6 @@
     <EntitySet Name="Tbl_CartStatus" EntityType="dbMyOnlineShoppingModel.Tbl_CartStatus" />
     <EntitySet Name="Tbl_MemberInfo" EntityType="dbMyOnlineShoppingModel.Tbl_MemberInfo" />
     <EntitySet Name="Tbl_Roles" EntityType="dbMyOnlineShoppingModel.Tbl_Roles" />
-    <EntitySet Name="Tbl_SlideImage" EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" />
-    <EntitySet Name="vw_UserRole" EntityType="dbMyOnlineShoppingModel.vw_UserRole" />
     <AssociationSet Name="FK_Tbl_MemberInfo_Tbl_MemberInfo" Association="dbMyOnlineShoppingModel.FK_Tbl_MemberInfo_Tbl_MemberInfo">
       <End Role="Tbl_MemberInfo" EntitySet="Tbl_MemberInfo" />
       <End Role="Tbl_MemberInfo1" EntitySet="Tbl_MemberInfo" />
@@ -116,6 +114,17 @@
       <End Role="Tbl_Members" EntitySet="Tbl_Members" />
       <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
     </AssociationSet>
+    <EntitySet Name="Tbl_UserRole" EntityType="dbMyOnlineShoppingModel.Tbl_UserRole" />
+    <AssociationSet Name="FK_Tbl_UserRole_Tbl_Members" Association="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_UserRole" EntitySet="Tbl_UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_UserRole_Tbl_Roles" Association="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles">
+      <End Role="Tbl_Roles" EntitySet="Tbl_Roles" />
+      <End Role="Tbl_UserRole" EntitySet="Tbl_UserRole" />
+    </AssociationSet>
+    <EntitySet Name="vw_UserRole" EntityType="dbMyOnlineShoppingModel.vw_UserRole" />
+    <EntitySet Name="Tbl_SlideImage" EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" />
   </EntityContainer>
   <ComplexType Name="GetBySearch_Result">
     <Property Type="Int32" Name="ProductId" Nullable="false" />
@@ -188,22 +197,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" FromRole="Tbl_Roles" ToRole="Tbl_Members" />
-  </EntityType>
-  <EntityType Name="Tbl_SlideImage">
-    <Key>
-      <PropertyRef Name="SlideId" />
-    </Key>
-    <Property Name="SlideId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="SlideTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
-    <Property Name="SlideImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="vw_UserRole">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
-    <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tbl_UserRole" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles" FromRole="Tbl_Roles" ToRole="Tbl_UserRole" />
   </EntityType>
   <Association Name="FK_Tbl_MemberInfo_Tbl_MemberInfo">
     <End Type="dbMyOnlineShoppingModel.Tbl_MemberInfo" Role="Tbl_MemberInfo" Multiplicity="1" />
@@ -450,6 +444,7 @@
     <NavigationProperty Name="Tbl_Roles" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" FromRole="Tbl_Members" ToRole="Tbl_Roles" />
     <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" FromRole="Tbl_Members" ToRole="Tbl_Store" />
     <NavigationProperty Name="Tbl_Transaction" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" FromRole="Tbl_Members" ToRole="Tbl_Transaction" />
+    <NavigationProperty Name="Tbl_UserRole" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members" FromRole="Tbl_Members" ToRole="Tbl_UserRole" />
   </EntityType>
   <Association Name="FK_Tbl_Brand_Tbl_Members">
     <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
@@ -547,4 +542,56 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Tbl_UserRole">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="RoleId" Type="Int32" />
+    <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members" FromRole="Tbl_UserRole" ToRole="Tbl_Members" />
+    <NavigationProperty Name="Tbl_Roles" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles" FromRole="Tbl_UserRole" ToRole="Tbl_Roles" />
+  </EntityType>
+  <Association Name="FK_Tbl_UserRole_Tbl_Members">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_UserRole" Role="Tbl_UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_UserRole">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_UserRole_Tbl_Roles">
+    <End Type="dbMyOnlineShoppingModel.Tbl_Roles" Role="Tbl_Roles" Multiplicity="0..1" />
+    <End Type="dbMyOnlineShoppingModel.Tbl_UserRole" Role="Tbl_UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_UserRole">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_UserRole">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_SlideImage">
+    <Key>
+      <PropertyRef Name="SlideId" />
+    </Key>
+    <Property Name="SlideId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SlideTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SlideImage1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SlideImage2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SlideImage3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

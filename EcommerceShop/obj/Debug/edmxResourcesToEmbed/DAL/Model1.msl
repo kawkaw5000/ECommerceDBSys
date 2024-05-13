@@ -89,24 +89,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Tbl_SlideImage">
-      <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_SlideImage">
-        <MappingFragment StoreEntitySet="Tbl_SlideImage">
-          <ScalarProperty Name="SlideImage" ColumnName="SlideImage" />
-          <ScalarProperty Name="SlideTitle" ColumnName="SlideTitle" />
-          <ScalarProperty Name="SlideId" ColumnName="SlideId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="vw_UserRole">
-      <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.vw_UserRole">
-        <MappingFragment StoreEntitySet="vw_UserRole">
-          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Tbl_Category">
       <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_Category">
         <MappingFragment StoreEntitySet="Tbl_Category">
@@ -221,6 +203,35 @@
           <ScalarProperty Name="IsActive" ColumnName="IsActive" />
           <ScalarProperty Name="userId" ColumnName="userId" />
           <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_UserRole">
+      <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_UserRole">
+        <MappingFragment StoreEntitySet="Tbl_UserRole">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_UserRole">
+      <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.vw_UserRole">
+        <MappingFragment StoreEntitySet="vw_UserRole">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_SlideImage">
+      <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_SlideImage">
+        <MappingFragment StoreEntitySet="Tbl_SlideImage">
+          <ScalarProperty Name="SlideImage3" ColumnName="SlideImage3" />
+          <ScalarProperty Name="SlideImage2" ColumnName="SlideImage2" />
+          <ScalarProperty Name="SlideImage1" ColumnName="SlideImage1" />
+          <ScalarProperty Name="SlideTitle" ColumnName="SlideTitle" />
+          <ScalarProperty Name="SlideId" ColumnName="SlideId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

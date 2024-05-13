@@ -24,6 +24,8 @@ public partial class Tbl_Roles
 
         this.Tbl_Members = new HashSet<Tbl_Members>();
 
+        this.Tbl_UserRole = new HashSet<Tbl_UserRole>();
+
     }
 
 
@@ -36,6 +38,10 @@ public partial class Tbl_Roles
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<Tbl_Members> Tbl_Members { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Tbl_UserRole> Tbl_UserRole { get; set; }
 
 }
 

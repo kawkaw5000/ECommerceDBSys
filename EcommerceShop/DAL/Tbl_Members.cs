@@ -12,11 +12,10 @@
 namespace EcommerceShop.DAL
 {
 
-    using System;
+using System;
     using System.Collections.Generic;
-    using System.Web.Mvc;
-
-    public partial class Tbl_Members
+    
+public partial class Tbl_Members
 {
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -34,6 +33,8 @@ namespace EcommerceShop.DAL
         this.Tbl_Product = new HashSet<Tbl_Product>();
 
         this.Tbl_Transaction = new HashSet<Tbl_Transaction>();
+
+        this.Tbl_UserRole = new HashSet<Tbl_UserRole>();
 
     }
 
@@ -63,9 +64,6 @@ namespace EcommerceShop.DAL
     public Nullable<int> StoreId { get; set; }
 
     public string OTP { get; set; }
-    
-    public bool IsOTPGenerated { get; set; }
-    public IEnumerable<SelectListItem> RoleList { get; set; }
 
 
 
@@ -96,6 +94,10 @@ namespace EcommerceShop.DAL
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<Tbl_Transaction> Tbl_Transaction { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Tbl_UserRole> Tbl_UserRole { get; set; }
 
 }
 

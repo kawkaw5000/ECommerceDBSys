@@ -17,5 +17,22 @@ namespace EcommerceShop
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            // Get the exception object
+            Exception exception = Server.GetLastError();
+
+            // Check if the exception is an HTTP exception and if its status code is 404
+            if (exception is HttpException && ((HttpException)exception).GetHttpCode() == 404)
+            {
+                // Clear the error to prevent the Yellow Screen of Death (YSOD)
+                Server.ClearError();
+
+                // Redirect to the PageNotFound action
+                Response.RedirectToRoute("PageNotFound");
+            }
+        }
+
     }
 }

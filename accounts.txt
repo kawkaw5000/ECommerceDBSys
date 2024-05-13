@@ -1,14 +1,17 @@
 Store accs:
-acc#1 : storetest1
+acc#1 : store1
 pass  : 123
 
-acc#2 : storetest2
+acc#2 : store2
 pass  : 123
 
 User accs:
 
-acc#1 : usertest1
+acc#1 : usernum1
 pass  : 123
 
-acc#2 : usertest2
+acc#2 : usernum2
 pass  : 123
+
+adminAcc
+123

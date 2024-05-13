@@ -20,6 +20,7 @@ namespace EcommerceShop.Utils
         Manager
     }
 
+
     public class Constant
     {
         public const string Role_Customer = "User";
@@ -35,6 +36,15 @@ namespace EcommerceShop.Utils
             get
             {
                 return Guid.NewGuid().ToString();
+            }
+        }
+
+        public static int code
+        {
+            get
+            {
+                Random r = new Random();
+                return r.Next(100000, 999999);
             }
         }
         public static List<SelectListItem> ListRole

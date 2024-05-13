@@ -132,7 +132,9 @@
           </Key>
           <Property Name="SlideId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SlideTitle" Type="varchar" MaxLength="500" />
-          <Property Name="SlideImage" Type="varchar(max)" />
+          <Property Name="SlideImage1" Type="varchar(max)" />
+          <Property Name="SlideImage2" Type="varchar(max)" />
+          <Property Name="SlideImage3" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="Tbl_Store">
           <Key>
@@ -160,6 +162,14 @@
           <Property Name="Quantity" Type="int" />
           <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="0" />
           <Property Name="TimeStamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Tbl_UserRole">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberId" Type="int" />
+          <Property Name="RoleId" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -315,30 +325,6 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Tbl_Members_Tbl_Roles">
-          <End Role="Tbl_Roles" Type="Self.Tbl_Roles" Multiplicity="0..1" />
-          <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Tbl_Roles">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="Tbl_Members">
-              <PropertyRef Name="roleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Tbl_Members_Tbl_Store">
-          <End Role="Tbl_Store" Type="Self.Tbl_Store" Multiplicity="0..1" />
-          <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Tbl_Store">
-              <PropertyRef Name="StoreId" />
-            </Principal>
-            <Dependent Role="Tbl_Members">
-              <PropertyRef Name="StoreId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Tbl_Transaction_Tbl_Members">
           <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="0..1" />
           <End Role="Tbl_Transaction" Type="Self.Tbl_Transaction" Multiplicity="*" />
@@ -372,6 +358,30 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
             </Principal>
             <Dependent Role="Tbl_Transaction">
               <PropertyRef Name="StoreId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_UserRole_Tbl_Members">
+          <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="0..1" />
+          <End Role="Tbl_UserRole" Type="Self.Tbl_UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Members">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Tbl_UserRole">
+              <PropertyRef Name="MemberId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_UserRole_Tbl_Roles">
+          <End Role="Tbl_Roles" Type="Self.Tbl_Roles" Multiplicity="0..1" />
+          <End Role="Tbl_UserRole" Type="Self.Tbl_UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Roles">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Tbl_UserRole">
+              <PropertyRef Name="RoleId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -423,6 +433,7 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
           <EntitySet Name="Tbl_SlideImage" EntityType="Self.Tbl_SlideImage" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbl_Store" EntityType="Self.Tbl_Store" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbl_Transaction" EntityType="Self.Tbl_Transaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_UserRole" EntityType="Self.Tbl_UserRole" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="vw_UserRole" EntityType="Self.vw_UserRole" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [vw_UserRole].[id] AS [id], 
@@ -478,14 +489,6 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
             <End Role="Tbl_MemberInfo" EntitySet="Tbl_MemberInfo" />
             <End Role="Tbl_MemberInfo1" EntitySet="Tbl_MemberInfo" />
           </AssociationSet>
-          <AssociationSet Name="FK_Tbl_Members_Tbl_Roles" Association="Self.FK_Tbl_Members_Tbl_Roles">
-            <End Role="Tbl_Roles" EntitySet="Tbl_Roles" />
-            <End Role="Tbl_Members" EntitySet="Tbl_Members" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tbl_Members_Tbl_Store" Association="Self.FK_Tbl_Members_Tbl_Store">
-            <End Role="Tbl_Store" EntitySet="Tbl_Store" />
-            <End Role="Tbl_Members" EntitySet="Tbl_Members" />
-          </AssociationSet>
           <AssociationSet Name="FK_Tbl_Transaction_Tbl_Members" Association="Self.FK_Tbl_Transaction_Tbl_Members">
             <End Role="Tbl_Members" EntitySet="Tbl_Members" />
             <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
@@ -497,6 +500,14 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
           <AssociationSet Name="FK_Tbl_Transaction_Tbl_Store" Association="Self.FK_Tbl_Transaction_Tbl_Store">
             <End Role="Tbl_Store" EntitySet="Tbl_Store" />
             <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_UserRole_Tbl_Members" Association="Self.FK_Tbl_UserRole_Tbl_Members">
+            <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+            <End Role="Tbl_UserRole" EntitySet="Tbl_UserRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_UserRole_Tbl_Roles" Association="Self.FK_Tbl_UserRole_Tbl_Roles">
+            <End Role="Tbl_Roles" EntitySet="Tbl_Roles" />
+            <End Role="Tbl_UserRole" EntitySet="Tbl_UserRole" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -541,8 +552,6 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
           <EntitySet Name="Tbl_CartStatus" EntityType="dbMyOnlineShoppingModel.Tbl_CartStatus" />
           <EntitySet Name="Tbl_MemberInfo" EntityType="dbMyOnlineShoppingModel.Tbl_MemberInfo" />
           <EntitySet Name="Tbl_Roles" EntityType="dbMyOnlineShoppingModel.Tbl_Roles" />
-          <EntitySet Name="Tbl_SlideImage" EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" />
-          <EntitySet Name="vw_UserRole" EntityType="dbMyOnlineShoppingModel.vw_UserRole" />
           <AssociationSet Name="FK_Tbl_MemberInfo_Tbl_MemberInfo" Association="dbMyOnlineShoppingModel.FK_Tbl_MemberInfo_Tbl_MemberInfo">
             <End Role="Tbl_MemberInfo" EntitySet="Tbl_MemberInfo" />
             <End Role="Tbl_MemberInfo1" EntitySet="Tbl_MemberInfo" />
@@ -619,6 +628,17 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
             <End Role="Tbl_Members" EntitySet="Tbl_Members" />
             <End Role="Tbl_Transaction" EntitySet="Tbl_Transaction" />
           </AssociationSet>
+          <EntitySet Name="Tbl_UserRole" EntityType="dbMyOnlineShoppingModel.Tbl_UserRole" />
+          <AssociationSet Name="FK_Tbl_UserRole_Tbl_Members" Association="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members">
+            <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+            <End Role="Tbl_UserRole" EntitySet="Tbl_UserRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_UserRole_Tbl_Roles" Association="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles">
+            <End Role="Tbl_Roles" EntitySet="Tbl_Roles" />
+            <End Role="Tbl_UserRole" EntitySet="Tbl_UserRole" />
+          </AssociationSet>
+          <EntitySet Name="vw_UserRole" EntityType="dbMyOnlineShoppingModel.vw_UserRole" />
+          <EntitySet Name="Tbl_SlideImage" EntityType="dbMyOnlineShoppingModel.Tbl_SlideImage" />
           </EntityContainer>
         <ComplexType Name="GetBySearch_Result">
           <Property Type="Int32" Name="ProductId" Nullable="false" />
@@ -691,22 +711,7 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" FromRole="Tbl_Roles" ToRole="Tbl_Members" />
-        </EntityType>
-        <EntityType Name="Tbl_SlideImage">
-          <Key>
-            <PropertyRef Name="SlideId" />
-          </Key>
-          <Property Name="SlideId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="SlideTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
-          <Property Name="SlideImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-        </EntityType>
-        <EntityType Name="vw_UserRole">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
-          <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Tbl_UserRole" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles" FromRole="Tbl_Roles" ToRole="Tbl_UserRole" />
         </EntityType>
         <Association Name="FK_Tbl_MemberInfo_Tbl_MemberInfo">
           <End Type="dbMyOnlineShoppingModel.Tbl_MemberInfo" Role="Tbl_MemberInfo" Multiplicity="1" />
@@ -953,6 +958,7 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
           <NavigationProperty Name="Tbl_Roles" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" FromRole="Tbl_Members" ToRole="Tbl_Roles" />
           <NavigationProperty Name="Tbl_Store" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" FromRole="Tbl_Members" ToRole="Tbl_Store" />
           <NavigationProperty Name="Tbl_Transaction" Relationship="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" FromRole="Tbl_Members" ToRole="Tbl_Transaction" />
+          <NavigationProperty Name="Tbl_UserRole" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members" FromRole="Tbl_Members" ToRole="Tbl_UserRole" />
         </EntityType>
         <Association Name="FK_Tbl_Brand_Tbl_Members">
           <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
@@ -1050,6 +1056,58 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Tbl_UserRole">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberId" Type="Int32" />
+          <Property Name="RoleId" Type="Int32" />
+          <NavigationProperty Name="Tbl_Members" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Members" FromRole="Tbl_UserRole" ToRole="Tbl_Members" />
+          <NavigationProperty Name="Tbl_Roles" Relationship="dbMyOnlineShoppingModel.FK_Tbl_UserRole_Tbl_Roles" FromRole="Tbl_UserRole" ToRole="Tbl_Roles" />
+        </EntityType>
+        <Association Name="FK_Tbl_UserRole_Tbl_Members">
+          <End Type="dbMyOnlineShoppingModel.Tbl_Members" Role="Tbl_Members" Multiplicity="0..1" />
+          <End Type="dbMyOnlineShoppingModel.Tbl_UserRole" Role="Tbl_UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Members">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Tbl_UserRole">
+              <PropertyRef Name="MemberId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_UserRole_Tbl_Roles">
+          <End Type="dbMyOnlineShoppingModel.Tbl_Roles" Role="Tbl_Roles" Multiplicity="0..1" />
+          <End Type="dbMyOnlineShoppingModel.Tbl_UserRole" Role="Tbl_UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Roles">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Tbl_UserRole">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="vw_UserRole">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="RoleName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Tbl_SlideImage">
+          <Key>
+            <PropertyRef Name="SlideId" />
+          </Key>
+          <Property Name="SlideId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SlideTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="SlideImage1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SlideImage2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SlideImage3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1140,24 +1198,6 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
             <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_Roles">
               <MappingFragment StoreEntitySet="Tbl_Roles">
                 <ScalarProperty Name="RoleName" ColumnName="RoleName" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Tbl_SlideImage">
-            <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_SlideImage">
-              <MappingFragment StoreEntitySet="Tbl_SlideImage">
-                <ScalarProperty Name="SlideImage" ColumnName="SlideImage" />
-                <ScalarProperty Name="SlideTitle" ColumnName="SlideTitle" />
-                <ScalarProperty Name="SlideId" ColumnName="SlideId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="vw_UserRole">
-            <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.vw_UserRole">
-              <MappingFragment StoreEntitySet="vw_UserRole">
-                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
-                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -1276,6 +1316,35 @@ warning 6002: The table/view 'dbMyOnlineShopping.dbo.vw_UserRole' does not have 
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="userId" ColumnName="userId" />
                 <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_UserRole">
+            <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_UserRole">
+              <MappingFragment StoreEntitySet="Tbl_UserRole">
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_UserRole">
+            <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.vw_UserRole">
+              <MappingFragment StoreEntitySet="vw_UserRole">
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_SlideImage">
+            <EntityTypeMapping TypeName="dbMyOnlineShoppingModel.Tbl_SlideImage">
+              <MappingFragment StoreEntitySet="Tbl_SlideImage">
+                <ScalarProperty Name="SlideImage3" ColumnName="SlideImage3" />
+                <ScalarProperty Name="SlideImage2" ColumnName="SlideImage2" />
+                <ScalarProperty Name="SlideImage1" ColumnName="SlideImage1" />
+                <ScalarProperty Name="SlideTitle" ColumnName="SlideTitle" />
+                <ScalarProperty Name="SlideId" ColumnName="SlideId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -426,6 +426,8 @@ namespace EcommerceShop.Controllers
             return RedirectToAction("Product");
         }
 
+        
+
         public ActionResult AddStore()
         {
             try
@@ -530,8 +532,7 @@ namespace EcommerceShop.Controllers
                 ModelState.AddModelError("", "Error retrieving store transactions: " + ex.Message);
                 return View();
             }
-        }
-
+        }   
 
     }
 }

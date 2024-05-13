@@ -55,32 +55,32 @@ namespace EcommerceShop.Repository
             return ErrorCode.Success;
         }
 
-        public Contracts.ErrorCode SignUp(Tbl_Members ua, ref String errMsg)
-        {
-            ua.userId = Utilities.gUid;        
-            ua.CreatedOn = DateTime.Now;
-            ua.IsDelete = false;
-            ua.IsActive = true;
+        //public Contracts.ErrorCode SignUp(Tbl_Members ua, ref String errMsg)
+        //{
+        //    ua.userId = Utilities.gUid;        
+        //    ua.CreatedOn = DateTime.Now;
+        //    ua.IsDelete = true;
+        //    ua.IsActive = false;
             
-            if (GetUserByUsername(ua.Username) != null)
-            {
-                errMsg = "Username Already Exist";
-                return Contracts.ErrorCode.Error;
-            }
+        //    if (GetUserByUsername(ua.Username) != null)
+        //    {
+        //        errMsg = "Username Already Exist";
+        //        return Contracts.ErrorCode.Error;
+        //    }
 
-            if (GetUserByEmail(ua.EmailId) != null)
-            {
-                errMsg = "Email Already Exist";
-                return Contracts.ErrorCode.Error;
-            }
+        //    if (GetUserByEmail(ua.EmailId) != null)
+        //    {
+        //        errMsg = "Email Already Exist";
+        //        return Contracts.ErrorCode.Error;
+        //    }
 
-            if (_userAcc.Create(ua, out errMsg) != Contracts.ErrorCode.Success)
-            {
-                return Contracts.ErrorCode.Error;
-            }
+        //    if (_userAcc.Create(ua, out errMsg) != Contracts.ErrorCode.Success)
+        //    {
+        //        return Contracts.ErrorCode.Error;
+        //    }
 
-            return Contracts.ErrorCode.Success;
-        }
+        //    return Contracts.ErrorCode.Success;
+        //}
 
       
     }

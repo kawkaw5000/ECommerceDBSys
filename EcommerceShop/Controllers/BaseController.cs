@@ -15,7 +15,8 @@ namespace EcommerceShop.Controllers
         public UserManager _userManager;
         public dbMyOnlineShoppingEntities _db;
         public BaseRepository<Tbl_Members> _userRepo;
-       
+        public BaseRepository<Tbl_UserRole> _userRole;
+
 
         public String Username { get { return User.Identity.Name; } }
         public String UserId { get { return _userManager.GetUserByUsername(Username).userId; } }
@@ -23,6 +24,7 @@ namespace EcommerceShop.Controllers
         {
             _db = new dbMyOnlineShoppingEntities();
             _userRepo = new BaseRepository<Tbl_Members>();
+            _userRole = new BaseRepository<Tbl_UserRole>();
             _userManager = new UserManager();
         }     
     }

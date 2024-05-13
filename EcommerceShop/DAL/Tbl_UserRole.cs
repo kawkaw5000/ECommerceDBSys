@@ -15,18 +15,20 @@ namespace EcommerceShop.DAL
 using System;
     using System.Collections.Generic;
     
-public partial class Tbl_SlideImage
+public partial class Tbl_UserRole
 {
 
-    public int SlideId { get; set; }
+    public int id { get; set; }
 
-    public string SlideTitle { get; set; }
+    public Nullable<int> MemberId { get; set; }
 
-    public string SlideImage1 { get; set; }
+    public Nullable<int> RoleId { get; set; }
 
-    public string SlideImage2 { get; set; }
 
-    public string SlideImage3 { get; set; }
+
+    public virtual Tbl_Members Tbl_Members { get; set; }
+
+    public virtual Tbl_Roles Tbl_Roles { get; set; }
 
 }
 

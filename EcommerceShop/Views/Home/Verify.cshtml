@@ -4,29 +4,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>SignUp</h2>
-@using (Html.BeginForm("Verify", "Home", FormMethod.Post))
-
+@using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken()
-
-    <div class="form-horizontal">
-
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-
-        <div class="form-group">
-            <label class="col-md-2 control-label">OTP</label>
-            <div class="col-md-3">
-                <input type="text" id="otp" name="otp" class="form-control" required />
-                @Html.ValidationMessageFor(model => model.OTP, "", new { @class = "text-danger" })
-            </div>
-            <div class="col-md-3">
-                <button type="button" id="generate-otp" class="btn btn-default">Generate OTP</button>
-            </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">OTP</label>
+        <div class="col-md-3">
+            @TempData["error"]
+            <input type="hidden" name="username" value="@TempData["username"]" />
+            <input type="text" id="otp" name="otp" class="form-control" required />
+            @Html.ValidationMessageFor(model => model.OTP, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-3">
+            <button type="button" id="generate-otp" class="btn btn-default">Generate OTP</button>
         </div>
     </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" class="btn btn-success" value="Verify" />
+        </div>
+    </div>
+
 }
 <div>
     @Html.ActionLink("Back to List", "Index")

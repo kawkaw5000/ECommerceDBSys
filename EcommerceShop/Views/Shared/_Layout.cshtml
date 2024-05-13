@@ -72,7 +72,7 @@
                         <li ><a href="#">About</a></li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        if (User.IsInRole("Manager"))
+                        if (User.IsInRole("Manager") || User.IsInRole("Admin"))
                         {
                         <li><a href="@Url.Action("Dashboard", "Admin")">Your Store</a></li>
                         }
