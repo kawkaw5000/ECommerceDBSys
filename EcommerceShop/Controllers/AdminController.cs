@@ -8,7 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-
+using System.IO;
 namespace EcommerceShop.Controllers
 {
     [Authorize(Roles = "Manager, Admin")]
@@ -246,9 +246,7 @@ namespace EcommerceShop.Controllers
         [HttpPost]
         public ActionResult AddBrand(Tbl_Brand tbl)
         {
-
             int memberId = GetCurrentMemberId();
-
 
             tbl.MemberId = memberId;
             tbl.IsActive = true;
@@ -274,7 +272,6 @@ namespace EcommerceShop.Controllers
         public ActionResult BrandEdit(Tbl_Brand tbl)
         {
             int memberId = GetCurrentMemberId();
-
      
             var existingBrand = _unitOfWork.GetRepositoryInstance<Tbl_Brand>().GetFirstorDefault(tbl.BrandId);
             if (existingBrand == null || existingBrand.MemberId != memberId)
@@ -292,8 +289,6 @@ namespace EcommerceShop.Controllers
 
             return RedirectToAction("Brand");
         }
-
-
         // ADMIN PRODUCT EDIT------------------------------------------------------------
         public ActionResult Product()
         {
@@ -324,7 +319,9 @@ namespace EcommerceShop.Controllers
         public ActionResult ProductEdit(Tbl_Product tbl, HttpPostedFileBase file)
         {
             int memberId = GetCurrentStoreId();
-
+       
+            ViewBag.CategoryList = new SelectList(GetCategories(), "CategoryId", "CategoryName");   
+            ViewBag.BrandList = new SelectList(GetBrand(), "BrandId", "BrandName");
 
             var existingProduct = _unitOfWork.GetRepositoryInstance<Tbl_Product>().GetFirstorDefault(tbl.ProductId);
             if (existingProduct == null || existingProduct.StoreId != memberId)
@@ -335,9 +332,26 @@ namespace EcommerceShop.Controllers
             string pic = null;
             if (file != null)
             {
-                pic = System.IO.Path.GetFileName(file.FileName);
-                string path = System.IO.Path.Combine(Server.MapPath("~/ProductImg/"), pic);
-                file.SaveAs(path);
+                
+                var fileExtension = Path.GetExtension(file.FileName).ToLower();
+
+               
+                if (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png")
+                {
+                   
+                    pic = Guid.NewGuid().ToString() + fileExtension;
+
+                 
+                    var path = Path.Combine(Server.MapPath("~/ProductImg/"), pic);
+
+                    file.SaveAs(path);
+                }
+                else
+                {
+                  
+                    ModelState.AddModelError("", "Only JPEG and PNG images are allowed.");
+                    return View(tbl);
+                }
             }
             existingProduct.ProductName = tbl.ProductName;
             existingProduct.Description = tbl.Description;
@@ -349,7 +363,6 @@ namespace EcommerceShop.Controllers
             existingProduct.IsActive = tbl.IsActive;
             existingProduct.IsDelete = tbl.IsDelete;
 
-        
             if (file != null)
             {
                 existingProduct.ProductImage = pic;
@@ -362,73 +375,84 @@ namespace EcommerceShop.Controllers
             return RedirectToAction("Product");
         }
 
-
         public ActionResult ProductAdd()
         {
             ViewBag.CategoryList = new SelectList(GetCategories(), "CategoryId", "CategoryName");
             ViewBag.BrandList = new SelectList(GetBrand(), "BrandId", "BrandName");
             return View();
         }
+
         [HttpPost]
         public ActionResult ProductAdd(Tbl_Product tbl, HttpPostedFileBase file)
         {
-
             int memberId = GetCurrentStoreId();
+         
+            ViewBag.CategoryList = new SelectList(GetCategories(), "CategoryId", "CategoryName");
+            ViewBag.BrandList = new SelectList(GetBrand(), "BrandId", "BrandName");
 
-            string pic = null;
-            if (file != null)
+        
+            if (file != null && file.ContentLength > 0)
             {
-                pic = System.IO.Path.GetFileName(file.FileName);
-                string path = System.IO.Path.Combine(Server.MapPath("~/ProductImg/"), pic);
-                file.SaveAs(path);
+           
+                var fileExtension = Path.GetExtension(file.FileName).ToLower();
+            
+                if (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png")
+                {
+                   
+                    var fileName = Guid.NewGuid().ToString() + fileExtension;               
+                    var path = Path.Combine(Server.MapPath("~/ProductImg/"), fileName);
+                 
+                    file.SaveAs(path);                
+                    tbl.ProductImage = fileName;
+                }
+                else
+                {                  
+                    ModelState.AddModelError("", "Only JPEG and PNG images are allowed.");
+                    return View(tbl);
+                }
             }
-
-            tbl.ProductImage = pic;
+            else
+            {              
+                ModelState.AddModelError("", "Please upload an image.");
+                return View(tbl);
+            }   
             tbl.CreatedDate = DateTime.Now;
             tbl.StoreId = memberId;
             tbl.IsActive = true;
             tbl.IsDelete = false;
+          
             _unitOfWork.GetRepositoryInstance<Tbl_Product>().Add(tbl);
+     
             return RedirectToAction("Product");
         }
-
-        
-
 
         public ActionResult AddStore()
         {
             try
-            {
-                
+            {               
                 int storeId = GetCurrentStoreId();
 
                 if (storeId != 0)
-                {
-                  
+                {                 
                     var userStore = _unitOfWork.GetRepositoryInstance<Tbl_Store>()
                         .GetAllRecords()
                         .FirstOrDefault(s => s.StoreId == storeId);
-
                     if (userStore != null)
-                    {
-                
+                    {                
                         return View(userStore);
                     }
                     else
-                    {
-                   
+                    {                   
                         return HttpNotFound();
                     }
                 }
                 else
-                {
-        
+                {    
                     return View();
                 }
             }
             catch (Exception ex)
-            {
-           
+            {          
                 ModelState.AddModelError("", "Error retrieving store data: " + ex.Message);
                 return View();
             }
@@ -438,17 +462,12 @@ namespace EcommerceShop.Controllers
         public ActionResult AddStore(Tbl_Store tbl)
         {
             try
-            {
-            
+            {           
                 int memberId = GetCurrentMemberId();
-
-     
+  
                 var member = _unitOfWork.GetRepositoryInstance<Tbl_Members>().GetFirstorDefault(memberId);
                 if (member != null && member.StoreId.HasValue)
-                {
-           
-
-               
+                {                      
                     var existingStore = _unitOfWork.GetRepositoryInstance<Tbl_Store>()
                         .GetAllRecords()
                         .FirstOrDefault(s => s.StoreId == member.StoreId.Value);
@@ -464,24 +483,18 @@ namespace EcommerceShop.Controllers
                         return RedirectToAction("Dashboard");
                     }
                     else
-                    {
-             
+                    {             
                         return HttpNotFound();
                     }
                 }
                 else
-                {
-                  
-
-             
+                {                              
                     tbl.IsActive = true;
                     tbl.IsDelete = false;
-
              
                     _unitOfWork.GetRepositoryInstance<Tbl_Store>().Add(tbl);
                     _unitOfWork.SaveChanges();
-
-                   
+                  
                     if (member != null)
                     {
                         member.StoreId = tbl.StoreId;
@@ -489,7 +502,7 @@ namespace EcommerceShop.Controllers
                         _unitOfWork.SaveChanges();
                     }
 
-                    return RedirectToAction("Store");
+                    return RedirectToAction("Dashboard");
                 }
             }
             catch (Exception ex)
@@ -503,11 +516,8 @@ namespace EcommerceShop.Controllers
         public ActionResult StoreTransactions()
         {
             try
-            {
-             
-                int storeId = GetCurrentStoreId();
-
-           
+            {           
+                int storeId = GetCurrentStoreId();          
                 var transactions = _unitOfWork.GetRepositoryInstance<Tbl_Transaction>()
                     .GetAllRecords()
                     .Where(t => t.StoreId == storeId)
@@ -516,8 +526,7 @@ namespace EcommerceShop.Controllers
                 return View(transactions);
             }
             catch (Exception ex)
-            {
-          
+            {          
                 ModelState.AddModelError("", "Error retrieving store transactions: " + ex.Message);
                 return View();
             }

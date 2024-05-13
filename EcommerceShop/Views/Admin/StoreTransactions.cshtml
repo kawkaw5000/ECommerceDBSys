@@ -1,10 +1,13 @@
 ﻿@model List<EcommerceShop.DAL.Tbl_Transaction>
+
 @{
     ViewBag.Title = "StoreTransactions";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Store Transactions</h2>
+@{
+    decimal totalPrices = Model.Sum(t => t.TotalAmount ?? 0);
+}
 
 @if (Model.Any())
 {
@@ -12,8 +15,8 @@
         <thead>
             <tr>
                 <th>Transaction ID</th>
-                <th>Member ID</th>
-                <th>Product ID</th>
+                <th>Member</th>
+                <th>Product</th>
                 <th>Quantity</th>
                 <th>Total Amount</th>
                 <th>Timestamp</th>
@@ -24,8 +27,8 @@
             {
                 <tr>
                     <td>@transaction.TransactionId</td>
-                    <td>@transaction.MemberId</td>
-                    <td>@transaction.ProductId</td>
+                    <td>@transaction.Tbl_Members.Username</td>
+                    <td>@transaction.Tbl_Product.ProductName</td>
                     <td>@transaction.Quantity</td>
                     <td>@transaction.TotalAmount</td>
                     <td>@transaction.TimeStamp</td>
@@ -38,3 +41,4 @@ else
 {
     <p>No transactions found for this store.</p>
 }
+<h3>Total Prices of All Products: @totalPrices</h3>

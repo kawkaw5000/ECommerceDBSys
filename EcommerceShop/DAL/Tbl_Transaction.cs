@@ -34,11 +34,11 @@ public partial class Tbl_Transaction
 
 
 
-    public virtual Tbl_Members Tbl_Members { get; set; }
-
     public virtual Tbl_Product Tbl_Product { get; set; }
 
     public virtual Tbl_Store Tbl_Store { get; set; }
+
+    public virtual Tbl_Members Tbl_Members { get; set; }
 
 }
 

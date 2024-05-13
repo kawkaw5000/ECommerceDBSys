@@ -19,6 +19,7 @@ namespace EcommerceShop.Models.Home
 
         public List<Tbl_Cart> CartItems { get; internal set; }
         public IPagedList<Tbl_Product> ListOfProducts { get; set; }
+        public IEnumerable<SelectListItem> roleId { get; set; }
 
         public HomeIndexViewModel CreateModel(string search, int pageSize, int? page)
         {

@@ -12,10 +12,11 @@
 namespace EcommerceShop.DAL
 {
 
-using System;
+    using System;
     using System.Collections.Generic;
-    
-public partial class Tbl_Members
+    using System.Web.Mvc;
+
+    public partial class Tbl_Members
 {
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -60,6 +61,11 @@ public partial class Tbl_Members
     public Nullable<int> roleId { get; set; }
 
     public Nullable<int> StoreId { get; set; }
+
+    public string OTP { get; set; }
+    
+    public bool IsOTPGenerated { get; set; }
+    public IEnumerable<SelectListItem> RoleList { get; set; }
 
 
 

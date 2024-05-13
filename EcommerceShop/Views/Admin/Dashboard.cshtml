@@ -3,6 +3,9 @@
     ViewBag.Title = "Dashboard";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Welcome @User.Identity.Name!</h2>
+}
 
-<h2>Welcome Admin!</h2>
 

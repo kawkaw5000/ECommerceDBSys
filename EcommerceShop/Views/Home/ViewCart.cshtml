@@ -29,21 +29,18 @@
                     <td>@item.Quantity</td>
                     <td>PHP @String.Format("{0:N2}", @item.Tbl_Product.Price * @item.Quantity)</td>
                     <td>
-                        <!-- Button for increasing quantity -->
                         <form action="@Url.Action("IncreaseProductQuant", "Home")" method="post">
                             <input type="hidden" name="productId" value="@item.ProductId" />
                             <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i></button>
                         </form>
                     </td>
                     <td>
-                        <!-- Button for decreasing quantity -->
                         <form action="@Url.Action("DecreaseProductQuant", "Home")" method="post">
                             <input type="hidden" name="productId" value="@item.ProductId" />
                             <button type="submit" class="btn btn-primary"><i class="fa fa-minus"></i></button>
                         </form>
                     </td>
-                    <td>
-                        <!-- Button for removing from cart -->
+                    <td>                  
                         <form action="@Url.Action("RemoveProduct", "Home")" method="post">
                             <input type="hidden" name="productId" value="@item.ProductId" />
                             <button type="submit" class="btn btn-danger">Remove from Cart</button>
@@ -55,13 +52,21 @@
     </table>
     <p><strong>Total amount: PHP @String.Format("{0:N2}", Model.Sum(item => item.Tbl_Product.Price * item.Quantity))</strong></p>
 
-    <div class="col-md-2">
-        <!-- Checkout button form submission -->
-        @using (Html.BeginForm("Checkout", "Home", FormMethod.Post))
-        {
-            <button type="submit" class="btn btn-success btn-lg btn-block">Checkout</button>
-        }
-    </div>
+    if (Model.Any(item => item.Quantity > item.Tbl_Product.Quantity))
+    {
+        <div class="alert alert-danger" role="alert">
+            One or more items in your cart exceed available stock. Please adjust quantities before checkout.
+        </div>
+    }
+    else
+    {
+        <div class="col-md-2">
+            @using (Html.BeginForm("Checkout", "Home", FormMethod.Post))
+            {
+                <button type="submit" class="btn btn-success btn-lg btn-block">Checkout</button>
+            }
+        </div>
+    }
 }
 else
 {

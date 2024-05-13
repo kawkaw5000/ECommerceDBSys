@@ -43,13 +43,16 @@
                 </ul>
                    
                         <ul class="nav navbar-nav navbar-right">
-                             @if (User.Identity.IsAuthenticated)
-                            {             
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                if (User.IsInRole("User"))
+                                {
                             <li class="dropdown">
                                 <a href="@Url.Action("ViewCart", "Home")">Cart<span class="badge">@ViewBag.CartItemCount</span><b></b></a>
                                 
                             </li>
-                             }
+                                }
+                            }
 
                         </ul>
 

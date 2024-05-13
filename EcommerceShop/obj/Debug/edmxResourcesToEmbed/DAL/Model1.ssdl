@@ -79,6 +79,7 @@
     <Property Name="ModifiedOn" Type="datetime" />
     <Property Name="roleId" Type="int" />
     <Property Name="StoreId" Type="int" />
+    <Property Name="OTP" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Tbl_Product">
     <Key>

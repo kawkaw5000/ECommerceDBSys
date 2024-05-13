@@ -65,8 +65,6 @@ public partial class Tbl_Product
 
     public virtual Tbl_Category Tbl_Category { get; set; }
 
-    public virtual Tbl_Members Tbl_Members { get; set; }
-
     public virtual Tbl_Store Tbl_Store { get; set; }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -76,6 +74,8 @@ public partial class Tbl_Product
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<Tbl_Cart> Tbl_Cart { get; set; }
+
+    public virtual Tbl_Members Tbl_Members { get; set; }
 
 }
 

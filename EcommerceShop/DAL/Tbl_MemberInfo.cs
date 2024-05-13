@@ -44,9 +44,9 @@ public partial class Tbl_MemberInfo
 
     public virtual Tbl_MemberInfo Tbl_MemberInfo2 { get; set; }
 
-    public virtual Tbl_Members Tbl_Members { get; set; }
-
     public virtual Tbl_Store Tbl_Store { get; set; }
+
+    public virtual Tbl_Members Tbl_Members { get; set; }
 
 }
 

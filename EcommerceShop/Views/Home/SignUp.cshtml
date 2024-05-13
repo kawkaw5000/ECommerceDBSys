@@ -52,11 +52,22 @@
         <div class="form-group">
             <label class="col-md-2 control-label">User type</label>
             <div class="col-md-3">
-                @Html.DropDownListFor(model => model.roleId, (IEnumerable<SelectListItem>)ViewBag.Roles, "Select Role", new { @class = "form-control", @required = true })
+                @Html.DropDownListFor(model => model.roleId, Model.RoleList, "Select Role", new { @class = "form-control", @required = true })
                 @Html.ValidationMessageFor(model => model.roleId, "", new { @class = "text-danger" })
             </div>
         </div>
 
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">OTP</label>
+            <div class="col-md-3">
+                <input type="text" id="otp" name="otp" class="form-control" required />
+                @Html.ValidationMessageFor(model => model.OTP, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-3">
+                <button type="button" id="generate-otp" class="btn btn-default">Generate OTP</button>
+            </div>
+        </div>
 
         @Html.HiddenFor(model => model.IsActive, new { htmlAttributes = new { @class = "form-control" } })
 
@@ -65,7 +76,6 @@
         @Html.HiddenFor(model => model.CreatedOn, new { htmlAttributes = new { @class = "form-control" } })
 
         @Html.HiddenFor(model => model.ModifiedOn, new { htmlAttributes = new { @class = "form-control" } })
-
   
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
@@ -74,7 +84,30 @@
         </div>
     </div>
 }
-
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#generate-otp').click(function () {
+                var email = $('#EmailId').val();
+                $.ajax({
+                    url: '@Url.Action("GenerateOTP", "Home")',
+                    type: 'POST',
+                    data: { email: email },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            $('#generate-otp').prop('disabled', true);
+                            $('#generate-otp').off('click');
+                        } else {
+                            $('#otp-error').text(response.message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

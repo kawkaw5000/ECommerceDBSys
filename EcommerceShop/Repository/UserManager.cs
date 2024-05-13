@@ -59,7 +59,8 @@ namespace EcommerceShop.Repository
         {
             ua.userId = Utilities.gUid;        
             ua.CreatedOn = DateTime.Now;
-            ua.IsDelete = true;     
+            ua.IsDelete = false;
+            ua.IsActive = true;
             
             if (GetUserByUsername(ua.Username) != null)
             {

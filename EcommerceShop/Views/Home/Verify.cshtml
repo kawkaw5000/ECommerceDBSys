@@ -1,0 +1,56 @@
+﻿@model EcommerceShop.DAL.Tbl_Members
+@{
+    ViewBag.Title = "Verify";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SignUp</h2>
+@using (Html.BeginForm("Verify", "Home", FormMethod.Post))
+
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">OTP</label>
+            <div class="col-md-3">
+                <input type="text" id="otp" name="otp" class="form-control" required />
+                @Html.ValidationMessageFor(model => model.OTP, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-3">
+                <button type="button" id="generate-otp" class="btn btn-default">Generate OTP</button>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#generate-otp').click(function () {
+                var email = $('#EmailId').val();
+                $.ajax({
+                    url: '@Url.Action("GenerateOTP", "Home")',
+                    type: 'POST',
+                    data: { email: email },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            $('#generate-otp').prop('disabled', true);
+                            $('#generate-otp').off('click');
+                        } else {
+                            $('#otp-error').text(response.message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

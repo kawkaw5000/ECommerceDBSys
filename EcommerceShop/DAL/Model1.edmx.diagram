@@ -18,24 +18,24 @@
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_BrandId" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK__Tbl_Produ__Categ__145C0A3F" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_ShippingDetails" Width="1.5" PointX="5.25" PointY="14.625" />
-        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Members" Width="1.5" PointX="3" PointY="5.125" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Store" Width="1.5" PointX="0.75" PointY="2.5" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Brand_Tbl_Members" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_CatMemberId" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK__Tbl_Membe__Membe__7C4F7684" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_StoreId" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK__Tbl_Shipp__Membe__1CF15040" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_MemberId" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_ProdStoreId" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Transaction" Width="1.5" PointX="12.75" PointY="4.75" />
-        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Product" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Store" />
         <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Cart" Width="1.5" PointX="9.75" PointY="4.875" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK__Tbl_Cart__Produc__25869641" />
         <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Cart_Tbl_Store" />
+        <EntityTypeShape EntityType="dbMyOnlineShoppingModel.Tbl_Members" Width="1.5" PointX="3" PointY="3" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Brand_Tbl_Members" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_CatMemberId" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK__Tbl_Membe__Membe__7C4F7684" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK__Tbl_Shipp__Membe__1CF15040" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_MemberId" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Roles" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Members_Tbl_Store" />
+        <AssociationConnector Association="dbMyOnlineShoppingModel.FK_Tbl_Transaction_Tbl_Members" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

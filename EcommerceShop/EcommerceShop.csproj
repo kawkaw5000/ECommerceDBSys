@@ -280,8 +280,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MailManager.cs" />
     <Compile Include="Models\CategoryDetail.cs" />
     <Compile Include="Models\Home\CartViewModel.cs" />
+    <Compile Include="Models\Home\CheckoutViewModel.cs" />
     <Compile Include="Models\Home\HomeIndexViewModel.cs" />
     <Compile Include="Models\Home\Item.cs" />
     <Compile Include="Models\Home\ProductDetailsViewModel.cs" />
@@ -303,6 +305,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CheckoutSuccess.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\MyMainLayOut.css" />
     <Content Include="Content\PagedList.css" />
@@ -348,6 +351,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MailSender.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -393,7 +397,6 @@
     <Content Include="Views\Home\AccountInfo.cshtml" />
     <Content Include="Views\Home\AccountEdit.cshtml" />
     <Content Include="Views\Home\AddUserInfo.cshtml" />
-    <Content Include="Views\Home\AddUserInfod.cshtml" />
     <Content Include="Views\Home\SignUp.cshtml" />
     <Content Include="Views\Home\ViewCart.cshtml" />
     <Content Include="Views\Admin\Brand.cshtml" />
@@ -403,8 +406,9 @@
     <Content Include="Views\Admin\StoreEdit.cshtml" />
     <Content Include="Views\Admin\AddStore.cshtml" />
     <Content Include="Views\Admin\Store.cshtml" />
-    <Content Include="Views\Home\CheckoutSuccess.cshtml" />
     <Content Include="Views\Admin\StoreTransactions.cshtml" />
+    <Content Include="Views\Home\CheckoutSuccess.cshtml" />
+    <Content Include="Views\Home\Verify.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AdminStyle\css\" />
